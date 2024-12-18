@@ -1,0 +1,11 @@
+/* Incorrect usage of calc() - extra spaces and missing unit */
+#bug {
+  width: calc( 100% - 20px ); /* Extra spaces */
+  height: calc(50% - 20); /* Missing unit */
+}
+
+/* Correct usage of calc() */
+#bugSolution {
+  width: calc(100% - 20px);
+  height: calc(50% - 20px);
+}
